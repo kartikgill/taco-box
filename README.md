@@ -13,7 +13,7 @@ pip install taco-box
 ```
 
 ## Usage
-Checkout this jupyter notebook on usage - [Notebook](tests/Taco_testing.ipynb)
+Checkout this jupyter notebook on usage - [Notebook](https://github.com/kartikgill/taco-box/blob/main/tests/Taco_testing.ipynb)
 
 Here is an example: 
 
@@ -46,7 +46,7 @@ mytaco.visualize(augmented_img)
 Below picture shows the variations of `TACo` augmentation algorithm from current implementation:-
 
 <p align="center">
-  <img src="images/taco_results.png" alt="Example result of base spectrogram"/ width=600>
+  <img src="https://github.com/kartikgill/taco-box/blob/main/images/taco_results.png" alt="Example result of base spectrogram"/ width=600>
 </p>
 
 ## Contributing 
