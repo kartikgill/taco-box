@@ -15,7 +15,7 @@ pip install taco-box
 ## Usage
 Checkout this jupyter notebook on usage - [Notebook](https://github.com/kartikgill/taco-box/blob/main/tests/Taco_testing.ipynb)
 
-Here is an example: 
+Here is an example:
 
 ```python
 from tacobox import Taco
@@ -41,15 +41,15 @@ mytaco.visualize(augmented_img)
         :min_tw_vertical:    minimum tile width for vertical tiles in pixels
         :max_tw_horizontal:  maximum possible tile width for horizontal tiles in pixels
         :min_tw_horizontal:  minimum tile width for horizontal tiles in pixels
-        
+
 ## Expected results
 Below picture shows the variations of `TACo` augmentation algorithm from current implementation:-
 
 <p align="center">
-  <img src="https://github.com/kartikgill/taco-box/blob/main/images/taco_results.png" alt="Example result of base spectrogram"/ width=600>
+  <img src="https://github.com/kartikgill/taco-box/blob/main/images/taco_results.png" alt="Example Output"/ width=600>
 </p>
 
-## Contributing 
+## Contributing
 This project is in very early stages of development. If there is an issue or feature request, feel free to open an issue. Additionally, a PR is always welcome.
 
 ## Reference
