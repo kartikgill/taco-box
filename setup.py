@@ -17,5 +17,5 @@ setup(
     packages=find_packages(),
     install_requires=['matplotlib', 'numpy'],
     classifiers=["Programming Language :: Python :: 3.7",
-                 "License :: OSI Approved :: Apache License, Version 2.0 (Apache-2.0)"],
+                 "License :: OSI Approved :: Apache Software License"],
 )
