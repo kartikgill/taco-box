@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="taco-box",
-    version="0.1.0",
+    version="0.1.1",
     author="Kartik Chaudhary",
     author_email="kartikgill96@gmail.com",
     description="An implementation library of Tiling and Corruption (TACo) Augmentations for OCR/HTR!",
