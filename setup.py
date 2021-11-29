@@ -16,5 +16,6 @@ setup(
     url="https://github.com/kartikgill/taco-box",
     packages=find_packages(),
     install_requires=['matplotlib', 'numpy'],
-    classifiers=["Programming Language :: Python :: 3.7", "License :: OSI Approved :: Apache 2.0"],
+    classifiers=["Programming Language :: Python :: 3.7",
+                 "License :: OSI Approved :: Apache License, Version 2.0 (Apache-2.0)"],
 )
