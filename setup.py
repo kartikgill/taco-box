@@ -15,6 +15,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kartikgill/taco-box",
     packages=find_packages(),
-    install_requires=[matplotlib, numpy],
+    install_requires=['matplotlib', 'numpy'],
     classifiers=["Programming Language :: Python :: 3.7", "License :: OSI Approved :: Apache 2.0"],
 )
