@@ -4,15 +4,15 @@ import numpy as np
 
 class Taco:
     def __init__(self,
-                cp_vertical=0.2,
-                cp_horizontal=0.2,
+                cp_vertical=0.25,
+                cp_horizontal=0.25,
                 max_tw_vertical=100,
                 min_tw_vertical=20,
                 max_tw_horizontal=50,
                 min_tw_horizontal=10
                 ):
         """
-        -: Creating Taco object and setting up parameters :-
+        -: Creating Taco object and setting up parameters:-
 
         -------Arguments--------
         :cp_vertical:        corruption probability of vertical tiles
@@ -110,7 +110,7 @@ class Taco:
         """
         A function to display images with given title.
         """
-        plt.figure(figsize=(10, 4))
+        plt.figure(figsize=(5, 2))
         plt.imshow(image, cmap='gray')
         plt.title(title)
         plt.tight_layout()
@@ -127,7 +127,7 @@ class Taco:
             while start < (img_w - 1):
                 tile = image[:,start:start+min(img_w-start-1,tile_width)]
                 if random.random() <= self.corruption_probability_vertical:
-                    tile = self._corrupted_tile(tile.shape, corruption_type)
+                    tile = self._corrupted_tile(tile, corruption_type)
                 tiles.append(tile)
                 start = start + tile_width
             augmented_image = np.hstack(tiles)
@@ -151,10 +151,10 @@ class Taco:
         tile_shape = tile.shape
         if corruption_type == 'random':
             corrupted_tile = np.random.random(tile_shape)*255
-        else if corrupted_type == 'white':
-            corrupted_tile = np.random.ones(tile_shape)*255
-        else if corruption_type == 'black':
-            corrupted_tile = np.random.zeros(tile_shape)
-        else if corruption_type == 'mean':
-            corrupted_tile = np.random.ones(tile_shape)*np.mean(tile)
+        if corruption_type == 'white':
+            corrupted_tile = np.ones(tile_shape)*255
+        if corruption_type == 'black':
+            corrupted_tile = np.zeros(tile_shape)
+        if corruption_type == 'mean':
+            corrupted_tile = np.ones(tile_shape)*np.mean(tile)
         return corrupted_tile
