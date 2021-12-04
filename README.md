@@ -1,5 +1,5 @@
 # Tiling and Corruption (TACo)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![PyPI](https://img.shields.io/pypi/v/tsai?color=blue&label=pypi%20version)](https://pypi.org/project/taco-box/0.1.1/#description)  ![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![PyPI](https://img.shields.io/pypi/v/taco-box?color=blue&label=pypi%20version)](https://pypi.org/project/taco-box/0.1.1/#description)  ![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
 
 `TACo` is a simple and effective data augmentation technique for the task of Optical Character Recognition (`OCR`) or Handwritten Text Recognition (`HTR`) (check reference).
 
